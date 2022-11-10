@@ -14,6 +14,7 @@
 		CEBD5618291B9DB1006D08F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBD5616291B9DB1006D08F9 /* LaunchScreen.storyboard */; };
 		CEBD5623291BAF8B006D08F9 /* CalcService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBD5622291BAF8B006D08F9 /* CalcService.swift */; };
 		CEBD5625291BB2F4006D08F9 /* Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBD5624291BB2F4006D08F9 /* Operations.swift */; };
+		CEBD5627291CE84E006D08F9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBD5626291CE84E006D08F9 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		CEBD5619291B9DB1006D08F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEBD5622291BAF8B006D08F9 /* CalcService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcService.swift; sourceTree = "<group>"; };
 		CEBD5624291BB2F4006D08F9 /* Operations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operations.swift; sourceTree = "<group>"; };
+		CEBD5626291CE84E006D08F9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 			children = (
 				CEBD5622291BAF8B006D08F9 /* CalcService.swift */,
 				CEBD5624291BB2F4006D08F9 /* Operations.swift */,
+				CEBD5626291CE84E006D08F9 /* Constants.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 				CEBD560C291B9DAE006D08F9 /* AppDelegate.swift in Sources */,
 				CEBD560E291B9DAE006D08F9 /* SceneDelegate.swift in Sources */,
 				CEBD5625291BB2F4006D08F9 /* Operations.swift in Sources */,
+				CEBD5627291CE84E006D08F9 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
