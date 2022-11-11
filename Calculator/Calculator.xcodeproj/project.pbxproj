@@ -15,6 +15,7 @@
 		CEBD5623291BAF8B006D08F9 /* CalcService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBD5622291BAF8B006D08F9 /* CalcService.swift */; };
 		CEBD5625291BB2F4006D08F9 /* Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBD5624291BB2F4006D08F9 /* Operations.swift */; };
 		CEBD5627291CE84E006D08F9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBD5626291CE84E006D08F9 /* Constants.swift */; };
+		CEBD5629291E38CC006D08F9 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBD5628291E38CC006D08F9 /* AppColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		CEBD5622291BAF8B006D08F9 /* CalcService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcService.swift; sourceTree = "<group>"; };
 		CEBD5624291BB2F4006D08F9 /* Operations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operations.swift; sourceTree = "<group>"; };
 		CEBD5626291CE84E006D08F9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CEBD5628291E38CC006D08F9 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				CEBD5622291BAF8B006D08F9 /* CalcService.swift */,
 				CEBD5624291BB2F4006D08F9 /* Operations.swift */,
 				CEBD5626291CE84E006D08F9 /* Constants.swift */,
+				CEBD5628291E38CC006D08F9 /* AppColors.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 				CEBD5610291B9DAE006D08F9 /* ViewController.swift in Sources */,
 				CEBD560C291B9DAE006D08F9 /* AppDelegate.swift in Sources */,
 				CEBD560E291B9DAE006D08F9 /* SceneDelegate.swift in Sources */,
+				CEBD5629291E38CC006D08F9 /* AppColors.swift in Sources */,
 				CEBD5625291BB2F4006D08F9 /* Operations.swift in Sources */,
 				CEBD5627291CE84E006D08F9 /* Constants.swift in Sources */,
 			);

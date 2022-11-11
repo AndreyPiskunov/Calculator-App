@@ -7,8 +7,6 @@
 
 import Foundation
 
-
-
 class CalcService {
     // MARK: - Properties
     
@@ -20,14 +18,19 @@ class CalcService {
     var currentOperation = Operations.noAction
     var displayView: ViewController
     
+    // MARK: - Methods
     init(displayView: ViewController){
         self.displayView = displayView
     }
-    
-    // MARK: - Methods
-    
-    func updateDisplay(text: String){
-        print(text)
+
+    func numberAction(number: Int) {
+        if currentNumber != "0" {
+            currentNumber.append(String(number))
+            displayView.updateDisplay(text: currentNumber)
+        } else {
+            currentNumber = String(number)
+            displayView.updateDisplay(text: currentNumber)
+        }
     }
     
     func makeCalculation(operation: Operations) {
@@ -47,14 +50,22 @@ class CalcService {
                 default:
                     break
                 }
+                
+                firstNumber = Double(result)!
+                
+                if Double(result)!.truncatingRemainder(dividingBy: 1) == 0 {
+                    result = String(Int(Double(result)!))
+                }
+                currentNumber = result
+                displayView.updateDisplay(text: currentNumber)
+                currentOperation = .noAction
             }
         } else {
             firstNumber = Double(currentNumber) ?? 0.0
             currentNumber = ""
-            updateDisplay(text: currentNumber)
+            displayView.updateDisplay(text: "")
             currentOperation = operation
         }
-        print()
     }
     
     func adding() {
@@ -62,7 +73,13 @@ class CalcService {
     }
     
     func subtraction() {
-        makeCalculation(operation: .subtraction)
+        if (currentNumber == "0") || (currentNumber == "") {
+            currentNumber = "-"
+            displayView.updateDisplay(text: currentNumber)
+        } else {
+            
+            makeCalculation(operation: .subtraction)
+        }
     }
     
     func increase() {
@@ -83,5 +100,38 @@ class CalcService {
         currentNumber = "0"
         result = ""
         currentOperation = Operations.noAction
+        displayView.updateDisplay(text: currentNumber)
+    }
+    
+    func spot() {
+        if currentNumber.contains(",") {
+            return
+        } else {
+            currentNumber += "."
+            displayView.updateDisplay(text: currentNumber)
+        }
+    }
+    
+    func plusMinus() {
+        var temp = currentNumber
+        if temp.contains("-") {
+            let sign = ["-"]
+            temp = String(temp.filter { !sign.contains(String($0)) })
+            displayView.updateDisplay(text: temp)
+            currentNumber = temp
+        } else {
+            temp = "-" + currentNumber
+            displayView.updateDisplay(text: temp)
+            currentNumber = temp
+        }
+        
+    }
+    
+    func percent() {
+            currentNumber = String(Double(currentNumber)! / 100)
+            displayView.updateDisplay(text: currentNumber)
+            result = currentNumber
+            firstNumber = Double(result)!
     }
 }
+
