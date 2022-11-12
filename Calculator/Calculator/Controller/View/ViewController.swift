@@ -12,6 +12,11 @@ class ViewController: UIViewController {
     private let display     = UITextField()
     private let mainVStack  = UIStackView()
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
+    
     //MARK: - Properties
     var service: CalcService?
     
@@ -142,7 +147,6 @@ private extension ViewController {
         increaseButton.backgroundColor = AppColors.actionButtons
         increaseButton.setTitleColor(.black, for: .normal)
         
-        
         line2.addSubview(sevenButton)
         line2.addSubview(eightButton)
         line2.addSubview(nineButton)
@@ -248,5 +252,3 @@ private extension ViewController {
         return stack
     }
 }
-
-

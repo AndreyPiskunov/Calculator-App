@@ -7,7 +7,7 @@
 
 import Foundation
 
-// MARK: - Operation types
+// Operation types
 enum Operations {
     case noAction
     case adding

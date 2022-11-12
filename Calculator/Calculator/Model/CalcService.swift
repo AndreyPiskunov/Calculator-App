@@ -134,4 +134,3 @@ class CalcService {
             firstNumber = Double(result)!
     }
 }
-
